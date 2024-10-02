@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition | Fitness Tracker</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/nutritions.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="./index.html">Dashboard</a></li>
+            <li><a href="./nutritions.html">Nutritions</a></li>
+            <li><a href="./workout-plan.html">Workout Plan</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="./sleep-counter.html">Sleep Counter</a></li>
+            <li><a href="./analytics.html">Analytics</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="welcome">
+            <h1>Nutrition Tracker</h1>
+        </div>
+
+        <div class="nutrition-section">
+            <section id="meal-log">
+                <h2>Meal Logging</h2>
+                <form id="meal-form">
+                    <label for="meal-type"><i class="fas fa-utensils"></i> Meal Type:</label>
+                    <input type="text" id="meal-type" placeholder="Breakfast, Lunch, Dinner, Snack" required>
+                    
+                    <label for="meal-name"><i class="fas fa-apple-alt"></i> Meal Name:</label>
+                    <input type="text" id="meal-name" required>
+                    
+                    <label for="calories"><i class="fas fa-fire"></i> Calories:</label>
+                    <input type="number" id="calories" required>
+                    
+                    <label for="protein"><i class="fas fa-drumstick-bite"></i> Protein (g):</label>
+                    <input type="number" id="protein">
+                    
+                    <label for="carbs"><i class="fas fa-bread-slice"></i> Carbs (g):</label>
+                    <input type="number" id="carbs">
+                    
+                    <label for="fat"><i class="fas fa-bacon"></i> Fat (g):</label>
+                    <input type="number" id="fat">
+                    
+                    <button type="submit">Log Meal</button>
+                </form>
+                <div class="meal-log">
+                    <!-- Meal log entries will be dynamically added here -->
+                </div>
+            </section>
+
+            <section id="daily-summary">
+                <h2>Daily Nutrition Summary</h2>
+                <div class="summary-details">
+                    <div class="summary-item" id="total-calories">
+                        <span>Total Calories: 0 kcal</span>
+                    </div>
+                    <div class="summary-item" id="total-protein">
+                        <span>Total Protein: 0 g</span>
+                    </div>
+                    <div class="summary-item" id="total-carbs">
+                        <span>Total Carbs: 0 g</span>
+                    </div>
+                    <div class="summary-item" id="total-fat">
+                        <span>Total Fat: 0 g</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="javascript/nutrition.js"></script>
+</body>
+</html>

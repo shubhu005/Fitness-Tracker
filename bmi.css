@@ -1,0 +1,390 @@
+a:hover{
+    background-color:white;
+    background-position: center;
+}
+.text h3{
+   font-size:20px;
+   font-style: italic;
+   columns: #797979;
+   background-position: center;
+}  
+
+body,html {
+    color: black;
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+    background-position: center;
+}
+form {
+    background-color: black;
+    display: inline-block;
+    box-sizing: content-box;
+    box-shadow: 2px 2px 20px 5px black;
+    padding: 10px;
+    width:100%;
+    max-width: 500px;
+    background-position: center;
+    margin-left: 250px;
+    margin-inline-start: 250px;
+}
+#label{
+   font-size: 20px;
+}
+#result {
+    border: 1px solid black;
+    padding: 2px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+#b{
+  text-align:center;
+  background-position: center;
+}
+#bmi{
+   background-color: black;
+   display: inline-block;
+   box-sizing: border-box;
+   box-shadow: 2px 2px 20px 5px black;
+   padding: 10px;
+   width:100%;
+   text-align: center;
+   align-items:center;
+   max-width: 1000px;
+   background-position: 50%;
+}
+input {
+    box-shadow: 1px 1px 3px 1px black;
+    width: 100%;
+    text-align: center;
+}
+.p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    
+}
+.submit,.reset {
+    display:inline-block;
+    color: white;
+    background-color: blue;
+
+    margin:0;
+    padding: 5px;
+    border: 0;
+    font-weight: bold;
+    width:100%;
+}
+.submit:hover ,.reset:hover{
+    color: blue;
+    background-color: red;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+#result {
+    border: 1px solid black;
+    padding: 2px;
+    color:black;
+    width: 100%;
+    text-align: center;
+}
+
+h4 {
+    color: black;
+    text-shadow: -2px -2px 5px white;
+}
+
+*{
+   margin:0;
+   padding:0;
+   
+}
+
+li {list-style-type: none;
+   font-size: 16pt;
+}
+.mail {
+   margin: auto;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   width: 400px;
+   background : white;
+   border: 1px soild silver;
+    background-position: center;
+}
+.mail h2 {
+   margin-left: 38px;
+}
+input {
+   font-size: 20pt;
+}
+input:focus, textarea:focus{
+   background-color: lightyellow;
+}
+input submit {
+   font-size: 12pt;
+}
+.rq {
+   color: white;
+   font-size: 10pt;
+}
+#header1{
+   padding-top: 400px;
+   padding-bottom: 400px;
+   background-image: url("");
+   background-repeat: no-repeat;
+   background-color: rebeccapurple;
+   background-position: center;
+   background-size: cover; 
+}
+#header{
+   padding-top: 80px;
+   padding-bottom: 50px;
+   background-repeat: no-repeat;
+   background-color: white;
+   background-position: center;
+   background-size: cover;
+}
+.container{
+   margin-right: 50px;
+   margin-left: 50px;
+   background-position: center;
+}
+#main{
+   margin-right: 50px;
+   margin-left: 50px;
+
+}
+.logo{
+   margin-top: 10px;
+   width:100px;
+}
+.header-text{
+   max-width: 340px;
+   margin-top: 170px;
+   margin-left: 100px;
+   margin-bottom: 100px;
+   
+
+}
+h1{
+   font-size:40px ;
+   color:white;
+}
+.square{
+   height:12px;
+   width:12px;
+   display:contents;
+   background: white;
+   margin: 15px 0;
+   background-position: center;
+}
+p big i{
+   font-size: 20px;
+   line-height: 18px;
+   color:lightgreen;
+}
+.header-text button{
+   margin-top: 20px;
+   margin-bottom: 60px;
+}
+.line-1{
+   width: 15px;
+   height:15px;
+   background:white;
+   display:inline-block;
+   
+}
+.line-2{
+   width:80px;
+   height:1px;
+   background:white ;
+   display:inline-block;
+}
+.line-3{
+   width:60px;
+   height:1px;
+   background:white;
+   display: inline-block;
+}
+.line{
+   line-height: 8px;
+}
+#result{
+   font-size: 30px;
+   color:green;
+}
+#concl{
+   font-size: 30px;
+   color:blue;
+}
+.x{
+   font-size:15px; 
+   font-family: Times New Roman;
+   color:white; 
+   text-transform: none;
+}
+#side{
+   width:250px;
+   height:700px;
+   position: fixed;
+   right:-250px;
+   top:0;
+   background-color:black;
+   z-index: 2;
+   transition: 2s;
+   overflow-y: scroll;
+}
+nav ul li{
+   list-style: none;
+   margin:50px 20px;
+}
+nav ul li a{
+   text-transform: uppercase;
+   text-decoration: none;
+   color: white;
+}
+
+
+#menu{
+   width:50px;
+   position: fixed;
+
+
+   right: 65px;
+   top:35px;
+   z-index:2;
+   cursor:pointer;
+}
+#about{
+   padding:200px 0;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   background-color: rebeccapurple;
+   filter: brightness(40%);
+   filter:grayscale(10%);
+   background-position: center;
+   background-size: cover;
+}
+.right{
+   flex-basis: 50%;
+   text-align: right;
+
+}
+q blockquote big {
+   font-size: 15px;
+   line-height: 20px;
+   color:ghostwhite;
+}
+
+.row{
+   width: 80%;
+   margin:auto;
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   background-position: center;
+}
+.col{
+   flex-basis: 25%;
+   text-align: center;
+}
+.col img{
+   width:100px;
+
+}
+.col h4{
+   margin-bottom: 15px;
+   font-size: 20px;
+   font-weight: 400px;
+}
+p{
+   color:white;
+}
+q{
+   color:white;
+}
+h1 big {
+   color:red;
+}
+.social{
+   width:50px;
+   position: fixed;
+   top: 75%;
+   left:0;
+   transform: translateY(-50%);
+   z-index:1;
+}
+.social img{
+   display: block;
+   width:30px;
+   margin:0 auto 20px;
+   cursor:pointer;
+}
+#maps{
+   padding-top: 115px;
+   padding-bottom: 115px;
+   display:flex;
+   align-items: center;
+   flex-wrap: wrap;
+   background-color: black;
+   background-position: center;
+   background-size: contain;
+   background-repeat: repeat;
+   text-transform: uppercase;
+}
+
+p big b{
+   color:white;
+}
+h1 big strong{
+   color:white;
+}
+h1 big em{
+   color:white;
+}
+p big i em b{
+   color:white;
+   display: inline;
+}
+.text{
+   max-width: 340px;
+   margin-top: 150px;
+   margin-left: 800px;
+   margin-bottom: 100px;
+   text-shadow: 3px 2px blue;
+
+}
+
+.align{
+   text-align: center;
+}
+.topnav {
+   background-color:white;
+ 
+}
+
+.topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 30px;
+   text-decoration: none;
+   font-size: 17px;
+}
+.img{
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height:75%;
+    background-color: black;
+    margin-left: 250px;
+    
+  }

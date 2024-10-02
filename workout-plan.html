@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plan | Fitness Tracker</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/workout-plan.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="./index.html">Dashboard</a></li>
+            <li><a href="./nutritions.html">Nutritions</a></li>
+            <li><a href="./workout-plan.html">Workout Plan</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="./sleep-counter.html">Sleep Counter</a></li>
+            <li><a href="./analytics.html">Analytics</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="welcome">
+            <h1>Workout Plan</h1>
+        </div>
+
+        <div class="workout-plan-section">
+            <section id="workout-form">
+                <h2>Plan Your Workout</h2>
+                <form id="plan-form">
+                    <label for="workout-name"><i class="fas fa-dumbbell"></i> Workout Name:</label>
+                    <input type="text" id="workout-name" required>
+                    
+                    <label for="workout-type"><i class="fas fa-clipboard-list"></i> Workout Type:</label>
+                    <input type="text" id="workout-type" placeholder="e.g., Strength, Cardio" required>
+                    
+                    <label for="duration"><i class="fas fa-clock"></i> Duration (mins):</label>
+                    <input type="number" id="duration" required>
+                    
+                    <label for="intensity"><i class="fas fa-tachometer-alt"></i> Intensity:</label>
+                    <select id="intensity" required>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    
+                    <button type="submit">Add Workout</button>
+                </form>
+            </section>
+
+            <section id="workout-log">
+                <h2>Workout Log</h2>
+                <div class="log-entry">
+                    <span class="entry-details">Cardio - 30 mins</span>
+                    <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                    <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                </div>
+                <div class="log-entry">
+                    <span class="entry-details">Strength Training - 45 mins</span>
+                    <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                    <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                </div>
+                <div class="log-entry">
+                    <span class="entry-details">Yoga - 60 mins</span>
+                    <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                    <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="javascript/workout-plan.js"></script>
+</body>
+</html>

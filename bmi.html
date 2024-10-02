@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI</title>
+  <link rel="stylesheet" href="bmi.css">
+ 
+</head>
+<body class="b">
+  <section id="logon">
+  <section style="background-color: #07386a;">
+    <section id="header">
+      <div class="container">
+        <h1  class="few" style="color:white"><b>BODY MASS INDEX</b></h1>
+
+
+          <form id="bmi">
+            <br><br>
+            <h4 style="color: red; font-size: 40px; " align="center">BMI Calculator</h4>
+
+            <input id="weight" type="text" placeholder="Your weight in kilograms" />
+            <br />
+            <br />
+            <input id="height" type="text" placeholder="Your height in meters" />
+            <br />
+            <br />
+            
+            <input class = "submit" type="button"  value="Submit" onclick="bmi()" /><br>
+            <input class="reset" type="reset">
+            <br>
+            <p id="result" style="font-size: 30px;">Here will be your result</p>
+            <p id="concl" align="center" style="font-size: 40px;"></p>
+
+          </form>
+         
+      </div>
+          <img class="img" src="https://i.pinimg.com/originals/91/7f/76/917f76fec193a4781881b7ed4c53cc31.png"/>
+        </div>                   
+      </section>
+      
+    
+     
+  
+</div>
+<script>
+  function bmi () {
+    var height = Number(document.getElementById("height").value);
+    var weight = Number(document.getElementById("weight").value);
+    var result = (weight / (height * height)*10000);
+    result=Math.round(result*100)/100;
+    document.getElementById("result").innerHTML = "Your BMI score is : " + result;
+
+    if(result<16)
+      document.getElementById("concl").innerHTML = "You are underweight--severe thinness";
+    else if(result>=16 && result<=17)
+      document.getElementById("concl").innerHTML = "You are underweight--moderate thinness";
+    else if(result>17 && result<=18.5)
+      document.getElementById("concl").innerHTML = "You are underweight--mild thinness";
+    else if(result>18.5 && result <=25)
+      document.getElementById("concl").innerHTML = "You are Normal";
+    else if(result>25 && result <=30)
+      document.getElementById("concl").innerHTML = "You are Overweight";
+    else if(result>30 && result<=35)
+      document.getElementById("concl").innerHTML = "You are Obese Class I";
+    else if (result>35 && result <=40)
+      document.getElementById("concl").innerHTML = "You are Obese Class II";
+    else if(result>40)
+      document.getElementById("concl").innerHTML = "You are Obese Class III";
+    else
+      document.getElementById("concl").innerHTML = "Please enter correct input";
+
+
+
+  }
+  var menu=document.getElementById("menu");
+  var side=document.getElementById("side");
+  side.style.right="-250px";
+  menu.onclick=function(){
+    if(side.style.right=="-250px"){
+      side.style.right="0px"
+    }
+    else{
+      side.style.right="-250px"
+    }
+  }
+  var scroll = new SmoothScroll('a[href*="#"]');
+  window.onscroll = function() {myFunction()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+
+
+</script>
+
+</body>
+</html>
+

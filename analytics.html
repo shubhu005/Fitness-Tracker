@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics | Fitness Tracker</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/analytics.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Chart.js for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="./index.html">Dashboard</a></li>
+            <li><a href="./nutritions.html">Nutritions</a></li>
+            <li><a href="./workout-plan.html">Workout Plan</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="./sleep-counter.html">Sleep Counter</a></li>
+            <li><a href="./analytics.html">Analytics</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="welcome">
+            <h1>Analytics</h1>
+        </div>
+
+        <div class="analytics-section">
+            <section id="activity-analytics">
+                <h2>Activity Analytics</h2>
+                <canvas id="activityAnalyticsChart"></canvas>
+            </section>
+
+            <section id="sleep-analytics">
+                <h2>Sleep Analytics</h2>
+                <canvas id="sleepAnalyticsChart"></canvas>
+            </section>
+
+            <section id="goal-analytics">
+                <h2>Goal Achievement</h2>
+                <canvas id="goalAnalyticsChart"></canvas>
+            </section>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="javascript/analytics.js"></script>
+</body>
+</html>

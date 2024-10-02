@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <a href="forgot-password.html" id="forgot-password">Forgot Password?</a>
+
+            
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="signup-options">
+            <p>Or sign up with:</p>
+            <a href="https://accounts.google.com" class="social-icon" id="gmail"><i class="fab fa-google"></i></a>
+            <a href="https://www.instagram.com/accounts/emailsignup/" class="social-icon" id="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/signup" class="social-icon" id="twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
